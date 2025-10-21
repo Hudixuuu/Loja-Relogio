@@ -1,0 +1,247 @@
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "San Francisco";
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 48px;
+  font-size: 14px;
+}
+
+nav {
+  font-size: 13px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1000px;
+  margin: 0 auto; */
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+svg {
+  display: block;
+}
+
+main {
+  margin-bottom: 60px;
+  /* max-width: 1000px; */
+  /* margin: 20px auto;
+  padding: 0 10px; */
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#opcoes-produto {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  & > h1 {
+    width: 20rem;
+    font-size: 2rem;
+  }
+}
+
+#produto {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+#precos {
+  font-size: 17.6px;
+}
+
+#a-vista,
+#parcelas,
+.pequeno {
+  font-size: 12.8px;
+}
+
+.cinza {
+  color: #6e6e73;
+}
+
+#opcoens-produto {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#selo-carbono {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  /* nesting ou aninhamento */
+
+  & img {
+    width: 25px;
+  }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label img {
+  width: 32px;
+  cursor: pointer;
+}
+
+#selecao-cores {
+  display: flex;
+  column-gap: 8px;
+  gap: 10px;
+}
+
+#selecao-cores label {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#selecao-cores img {
+  width: 32px;
+  cursor: pointer;
+  mix-blend-mode: color;
+}
+
+.cores {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input[type="radio"]:checked + label {
+  border: 2px solid #0066cc;
+  border-radius: 50%;
+}
+
+#opcoes-tamanho input[type="radio"]:checked + label {
+  border: 2px solid #0066cc;
+}
+
+#selecionar-imagen input[type="radio"]:checked + label {
+  border-radius: 0;
+  border: none;
+  border-bottom: solid 2px #c5c5c5;
+}
+/* 1:11 */
+
+#opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+#tamanho-caixa {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#opcoes-tamanho {
+  display: flex;
+  gap: 12px;
+}
+
+#opcoes-tamanho label {
+  border: solid 1px black;
+  padding: 30px 50px;
+  border-radius: 16px;
+  font-size: 17.6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#disclaimer {
+  display: flex;
+  flex-direction: column;
+}
+
+#info-extra,
+#comprar,
+.comprar-depois {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.entrega {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.informacoes-entrega {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* #colocar-na-sacola {
+  background-color: #0071e3;
+  color: white;
+} */
+button {
+  background-color: #0071e3;
+  color: white;
+  font-size: 17.6px;
+  padding: 8px 92px;
+  border-radius: 8px;
+  border: none;
+  align-self: start;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #057bf1;
+}
+
+.salvar {
+  display: flex;
+  gap: 3px;
+}
+
+#selecionar-imagen {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+#selecionar-imagen label img {
+  width: 60px;
+  cursor: pointer;
+}
